@@ -57,4 +57,4 @@ jobs:
           echo "${SFDX_JWT_KEY}" > server.pem
           npx sfdx force:auth:jwt:grant --clientid "3MVG9n_HvETGhr3D_36zCOmKpzc.Wyelz9hBtWCZqPJLp7MTPeOrXTfaC6lkpLt4aLG_VTb.igdRPVhtRi765" --jwtkeyfile server.pem --username surya_09@releaseowl.com --setdefaultdevhubusername
           npx sfdx force:org:display --json -u surya_09@releaseowl.com > sfdx-auth.json
-          rm server.pem
+
