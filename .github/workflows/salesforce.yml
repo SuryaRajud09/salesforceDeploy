@@ -58,4 +58,3 @@ jobs:
           npx sfdx force:auth:jwt:grant --clientid "3MVG9n_HvETGhr3D_36zCOmKpzZichJnwJKS_HOm.dub0nbVqpVSW38.JXLVLaCvee7ByNxqsh1RzYQ3.Yy3Y" --jwtkeyfile server1.pem --username surya_09@releaseowl.com --setdefaultdevhubusername
           npx sfdx force:org:display --json -u surya_09@releaseowl.com > sfdx-auth.json
           rm server1.pem
-
