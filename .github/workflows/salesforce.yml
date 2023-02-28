@@ -47,8 +47,8 @@ jobs:
           SFDX_CLIENT_ID: ${{ secrets.SFDX_CLIENT_ID }}
         run: |
           echo "${SFDX_JWT_KEY}" > server.key
-          npx sfdx auth:jwt:grant --clientid  3MVG9ux34Ig8G5eoXfCnFXJOqQgIuqaB3Kx4mdXAxbnWvSAUv4_Egucb.46hctMtWWiuiK3PkhLn8_CWCwIJe --jwtkeyfile server.key --username prashantd79795@gmail.com --setdefaultdevhubusername
-          npx sfdx force:org:display --json -u prashantd79795@gmail.com > sfdx-auth.json
+          npx sfdx auth:jwt:grant --clientid  3MVG9ux34Ig8G5eoXfCnFXJOqQgIuqaB3Kx4mdXAxbnWvSAUv4_Egucb.46hctMtWWiuiK3PkhLn8_CWCwIJe --jwtkeyfile server.key --username surya_09@releaseowl.com --setdefaultdevhubusername
+          npx sfdx force:org:display --json -u surya_09@releaseowl.com > sfdx-auth.json
       - name: Deploy Apex Class
         run: |
-          sfdx force:source:deploy --sourcepath force-app/main/default/classes/AccountController.cls -u prashantd79795@gmail.com
+          sfdx force:source:deploy --sourcepath force-app/main/default/classes/AccountController.cls -u surya_09@releaseowl.com
